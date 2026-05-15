@@ -1,0 +1,56 @@
+{
+  "table_aware": [
+    {
+      "text": "Table: Page 1, Table 1\n- Department: Sales; Q2 Revenue: $1.2M; Q3 Revenue: $1.5M; Growth: +25%\n- Department: Marketing; Q2 Revenue: $800K; Q3 Revenue: $950K; Growth: +19%\n- Department: Engineering; Q2 Revenue: $500K; Q3 Revenue: $600K; Growth: +20%\n- Department: Operations; Q2 Revenue: $400K; Q3 Revenue: $480K; Growth: +20%\n",
+      "metadata": {
+        "type": "table",
+        "caption": "Page 1, Table 1",
+        "rows": 4,
+        "columns": 4,
+        "display_rows": 4,
+        "page": 1,
+        "chunking_strategy": "table_aware"
+      },
+      "raw_table": "**Page 1, Table 1**\n\n| Department | Q2 Revenue | Q3 Revenue | Growth |\n|---|---|---|---|\n| Sales | $1.2M | $1.5M | +25% |\n| Marketing | $800K | $950K | +19% |\n| Engineering | $500K | $600K | +20% |\n| Operations | $400K | $480K | +20% |\n"
+    },
+    {
+      "text": "Q3 2024 Financial Report This report summarizes the company's performance in Q3 2024. All departments showed positive growth compa Department Q2 Revenue Q3 Revenue Growth Sales $1.2M $1.5M +25% Marketing $800K $950K +19% Engineering $500K $600K +20% Operations $400K $480K +20% As shown above, the Sales department led growth with a 25% increase.",
+      "metadata": {
+        "type": "text",
+        "page": 1,
+        "chunking_strategy": "table_aware_text"
+      }
+    },
+    {
+      "text": "Revenue Growth Trends The chart below illustrates the upward trend across all departments. [Bar Chart Showing Growth %] Sales: ···················· 25% Marketing: ················ 19% Engineering: ················· 20% Operations: ················· 20%",
+      "metadata": {
+        "type": "text",
+        "page": 2,
+        "chunking_strategy": "table_aware_text"
+      }
+    }
+  ],
+  "multimodal": [
+    {
+      "text": "Q3 2024 Financial Report\nThis report summarizes the company's performance in Q3 2024. All departments showed positive growth compa\nDepartment\nQ2 Revenue\nQ3 Revenue\nGrowth\nSales\n$1.2M\n$1.5M\n+25%\nMarketing\n$800K\n$950K\n+19%\nEngineering\n$500K\n$600K\n+20%\nOperations\n$400K\n$480K\n+20%\nAs shown above, the Sales department led growth with a 25% increase.\n",
+      "metadata": {
+        "type": "multimodal",
+        "page": 1,
+        "chunking_strategy": "multimodal",
+        "image_count": 0,
+        "has_vision_descriptions": false
+      }
+    },
+    {
+      "text": "Revenue Growth Trends\nThe chart below illustrates the upward trend across all departments.\n[Bar Chart Showing Growth %]\nSales: ···················· 25%\nMarketing: ················ 19%\nEngineering: ················· 20%\nOperations: ················· 20%\n",
+      "metadata": {
+        "type": "multimodal",
+        "page": 2,
+        "chunking_strategy": "multimodal",
+        "image_count": 0,
+        "has_vision_descriptions": false
+      }
+    }
+  ],
+  "diagram_aware": []
+}
