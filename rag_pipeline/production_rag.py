@@ -349,3 +349,4 @@ print(f"Answer: {result2['answer']}")
 
 # Check stats
 print(f"\nStats: {json.dumps(rag.get_stats(), indent=2)}")
+#i was given a task from this slide 
